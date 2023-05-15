@@ -11,3 +11,15 @@ Bird::Bird() {
 void Bird::flap() {
     printf("Flap!\n");
 }
+
+void Bird::handleInput() {
+
+}
+
+int Bird::getPositionX() {
+    return birdXPosition;
+}
+
+int Bird::getPositionY() {
+    return birdYPosition;
+}

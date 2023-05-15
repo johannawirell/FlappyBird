@@ -5,6 +5,8 @@ class Game {
 public:
     Game();
     void start(); 
+    void initializeGame();
+    void gameLoop();
 };
 
 #endif

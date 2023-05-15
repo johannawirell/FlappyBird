@@ -10,6 +10,9 @@ public:
 
     Bird();
     void flap();
+    void handleInput();
+    int getPositionX();
+    int getPositionY();
 };
 
 #endif
