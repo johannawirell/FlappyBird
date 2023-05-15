@@ -1,19 +1,26 @@
 #include "Bird.h"
-#include <cstdio>
+#include <ncurses.h>
 
 Bird::Bird() {
-    jumpHeight = 10;
-    gravity = 2;
+    jumpHeight = 5;
+    gravity = 1;
     birdYPosition = 0;
-    birdXPosition = 0;
+    birdXPosition = 10;
 }
 
 void Bird::flap() {
-    printf("Flap!\n");
+    // Implementera fågelns hopp-logik
+    birdYPosition -= jumpHeight;
+}
+
+void Bird::update() {
+    // Implementera fågelns uppdateringslogik (t.ex. gravitation)
+    birdYPosition += gravity;
 }
 
 void Bird::handleInput() {
-
+    // Implementera fågelns uppdateringslogik (t.ex. gravitation)
+    birdYPosition += gravity;
 }
 
 int Bird::getPositionX() {
@@ -22,4 +29,10 @@ int Bird::getPositionX() {
 
 int Bird::getPositionY() {
     return birdYPosition;
+}
+
+bool Bird::isCollision() {
+    // Implementera kollisionslogik (om fågeln kolliderar med hinder eller gräns)
+    // Returnera true om kollision sker, annars false
+    return false;
 }

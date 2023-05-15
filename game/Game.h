@@ -6,6 +6,7 @@ public:
     Game();
     void start(); 
     void initializeGame();
+    void handleGameOver(int score);
     void gameLoop();
 };
 

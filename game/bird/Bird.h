@@ -10,9 +10,11 @@ public:
 
     Bird();
     void flap();
+    void update();
     void handleInput();
     int getPositionX();
     int getPositionY();
+    bool isCollision();
 };
 
 #endif
